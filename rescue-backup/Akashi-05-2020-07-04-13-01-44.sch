@@ -1,20 +1,53 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Power_Supply_Modules
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Akashi-05"
-Date "2020-07-04"
-Rev "v1.0.0"
+Title ""
+Date ""
+Rev ""
 Comp ""
-Comment1 "Tooth brushing mirrow with LED"
+Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Power_Supply_Modules:AE-XCL102D503CR-G U1
+L AE-XCL102D503CR-G U1
 U 1 1 5EED96B2
 P 4750 2700
 F 0 "U1" H 4750 3050 60  0000 C CNN
@@ -25,7 +58,7 @@ F 3 "" H 4750 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Akashi-05-rescue:Conn_01x02 J1
+L Conn_01x02 J1
 U 1 1 5EED9754
 P 3400 2550
 F 0 "J1" H 3400 2650 50  0000 C CNN
@@ -36,7 +69,7 @@ F 3 "" H 3400 2550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Akashi-05-rescue:LED D1
+L LED D1
 U 1 1 5EED9793
 P 6100 2750
 F 0 "D1" H 6100 2850 50  0000 C CNN
@@ -47,7 +80,7 @@ F 3 "" H 6100 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Akashi-05-rescue:R R1
+L R R1
 U 1 1 5EED97D4
 P 6100 3200
 F 0 "R1" V 6180 3200 50  0000 C CNN
@@ -64,7 +97,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2900 6100 3050
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 5EED9899
 P 6100 3450
 F 0 "#PWR01" H 6100 3200 50  0001 C CNN
@@ -75,7 +108,7 @@ F 3 "" H 6100 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 5EED98E3
 P 4150 3400
 F 0 "#PWR02" H 4150 3150 50  0001 C CNN
@@ -88,7 +121,7 @@ $EndComp
 Wire Wire Line
 	6100 3450 6100 3350
 Wire Wire Line
-	4150 2650 4150 2850
+	4150 2650 4150 3400
 Wire Wire Line
 	4150 2850 4250 2850
 Wire Wire Line
@@ -97,14 +130,14 @@ Wire Wire Line
 	4150 2650 3600 2650
 Connection ~ 4150 2850
 Wire Wire Line
-	4250 2200 4250 2550
+	4250 2200 4250 2700
 Connection ~ 4250 2550
 Wire Wire Line
 	5250 2700 5650 2700
 Wire Wire Line
 	5650 2700 5650 3450
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5EED9A86
 P 5650 3450
 F 0 "#PWR03" H 5650 3200 50  0001 C CNN
@@ -120,8 +153,4 @@ Wire Wire Line
 	5400 2850 5400 2200
 Wire Wire Line
 	5400 2200 4250 2200
-Wire Wire Line
-	4150 2850 4150 3400
-Wire Wire Line
-	4250 2550 4250 2700
 $EndSCHEMATC
